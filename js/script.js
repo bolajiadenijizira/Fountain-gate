@@ -3,9 +3,9 @@
   'use strict';
 
   /* ---- SETTINGS: edit here ----
-     formEndpoint: paste a Formspree / Basin / Getform URL to deliver forms directly.
+     formEndpoint: the Formspree form address. Messages are delivered through it.
      Leave empty and forms open the visitor's email app with the message ready to send. */
-  var CONFIG = { formEndpoint: 'https://formsubmit.co/ajax/fountaingatemontessorijalingo@gmail.com', toEmail: 'fountaingatemontessorijalingo@gmail.com', phone: '+234 803 424 0369' };
+  var CONFIG = { formEndpoint: 'https://formspree.io/f/mgakpvkk', toEmail: 'fountaingatemontessorijalingo@gmail.com', phone: '+234 803 424 0369' };
 
   var $ = function (s, r) { return (r || document).querySelector(s); };
   var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
@@ -135,13 +135,15 @@
       /* Opened as a local file (file://): the form service cannot receive it, so use the email app. */
       if (CONFIG.formEndpoint && location.protocol !== 'file:') {
         submit.disabled = true;
+        var hp = $('[name="_honey"]', f);
+        if (hp && hp.value) { say('ok', 'Thank you!'); submit.disabled = false; return; }
         var data = new FormData(f);
+        data.delete('_honey');
         data.append('_subject', (f.dataset.subject || 'Website enquiry') + ' - Fountain Gate website');
-        data.append('_template', 'table');
         fetch(CONFIG.formEndpoint, { method: 'POST', headers: { Accept: 'application/json' }, body: data })
           .then(function (r) { return r.json().then(function (d) { return { ok: r.ok, d: d }; }); })
           .then(function (x) {
-            if (!x.ok || String(x.d.success) === 'false') throw new Error('rejected');
+            if (!x.ok || x.d.errors) throw new Error('rejected');
             f.reset();
             say('ok', 'Thank you! Your message has been sent to the school. We will reply as soon as we can.');
           })
