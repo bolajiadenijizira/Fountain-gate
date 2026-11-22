@@ -1,0 +1,1381 @@
+/* =========================================
+   FOUNTAIN GATE MONTESSORI SCHOOL
+   ABOUT PAGE CSS
+========================================= */
+
+
+/* =========================================
+   ABOUT HERO
+========================================= */
+
+.about-hero {
+    position: relative;
+
+    min-height: 430px;
+
+    padding: 80px 8%;
+
+    background:
+        linear-gradient(
+            120deg,
+            #111111,
+            #1c1c1c
+        );
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.about-hero::after {
+    content: "ABOUT";
+
+    position: absolute;
+
+    right: -20px;
+    bottom: -50px;
+
+    font-size: 170px;
+    font-weight: 800;
+
+    letter-spacing: -10px;
+
+    color: rgba(255,255,255,0.025);
+
+    pointer-events: none;
+}
+
+.about-hero-content {
+    max-width: 800px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+.about-hero-content > span {
+    color: #d83232;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+.about-hero-content h1 {
+    margin-top: 15px;
+
+    font-size: clamp(42px, 5vw, 70px);
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+}
+
+.about-hero-content h1 strong {
+    display: block;
+
+    color: #d83232;
+}
+
+.about-hero-content p {
+    max-width: 650px;
+
+    margin-top: 25px;
+
+    color: #aaa;
+
+    font-size: 13px;
+
+    line-height: 1.9;
+}
+
+
+/* =========================================
+   ABOUT INTRO
+========================================= */
+
+.about-intro {
+    padding: 90px 7%;
+
+    background: #ffffff;
+}
+
+.about-intro-container {
+    max-width: 1150px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+
+/* IMAGE */
+
+.about-intro-image {
+    position: relative;
+}
+
+.about-intro-image img {
+    width: 100%;
+
+    height: 480px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+}
+
+
+/* IMAGE LABEL */
+
+.about-image-label {
+    position: absolute;
+
+    bottom: 25px;
+    left: 25px;
+
+    padding: 15px 20px;
+
+    background: #111111;
+
+    color: white;
+
+    border-left: 4px solid #b51d1d;
+
+    border-radius: 5px;
+}
+
+.about-image-label strong {
+    display: block;
+
+    font-size: 13px;
+}
+
+.about-image-label span {
+    display: block;
+
+    margin-top: 4px;
+
+    color: #999;
+
+    font-size: 9px;
+}
+
+
+/* TEXT */
+
+.about-intro-text > span {
+    color: #b51d1d;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.about-intro-text h2 {
+    margin: 12px 0 20px;
+
+    font-size: 40px;
+
+    line-height: 1.2;
+}
+
+.about-intro-text p {
+    margin-bottom: 16px;
+
+    color: #666;
+
+    font-size: 13px;
+
+    line-height: 1.9;
+}
+
+
+/* =========================================
+   SCHOOL VALUES
+========================================= */
+
+.values-section {
+    padding: 90px 7%;
+
+    background: #f4f0e8;
+}
+
+.values-heading {
+    max-width: 700px;
+
+    margin: 0 auto 50px;
+
+    text-align: center;
+}
+
+.values-heading span {
+    color: #b51d1d;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.values-heading h2 {
+    margin-top: 10px;
+
+    font-size: 40px;
+
+    line-height: 1.2;
+}
+
+.values-heading p {
+    margin-top: 15px;
+
+    color: #777;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+}
+
+
+/* VALUE CARDS */
+
+.values-grid {
+    max-width: 1150px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+.value-card {
+    position: relative;
+
+    padding: 30px;
+
+    background: #ffffff;
+
+    border: 1px solid #e7e2da;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    transition: 0.3s ease;
+}
+
+.value-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+
+    background: #b51d1d;
+}
+
+.value-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 18px 40px rgba(0,0,0,0.08);
+}
+
+.value-number {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 20px;
+
+    background: #f6dddd;
+
+    color: #b51d1d;
+
+    border-radius: 8px;
+
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.value-card h3 {
+    margin-bottom: 12px;
+
+    font-size: 17px;
+}
+
+.value-card p {
+    color: #777;
+
+    font-size: 12px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   OUR MISSION
+========================================= */
+
+.mission-section {
+    padding: 90px 7%;
+
+    background: #ffffff;
+}
+
+.mission-container {
+    max-width: 1150px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+.mission-text span {
+    color: #b51d1d;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.mission-text h2 {
+    margin: 12px 0 20px;
+
+    font-size: 40px;
+
+    line-height: 1.2;
+}
+
+.mission-text p {
+    margin-bottom: 15px;
+
+    color: #666;
+
+    font-size: 13px;
+
+    line-height: 1.9;
+}
+
+
+/* MISSION BOX */
+
+.mission-box {
+    padding: 45px;
+
+    background: #111111;
+
+    color: white;
+
+    border-radius: 14px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.mission-box::before {
+    content: "";
+
+    position: absolute;
+
+    width: 160px;
+    height: 160px;
+
+    right: -60px;
+    top: -60px;
+
+    border-radius: 50%;
+
+    border: 30px solid rgba(181,29,29,0.15);
+}
+
+.mission-box h3 {
+    position: relative;
+
+    margin-bottom: 15px;
+
+    font-size: 25px;
+}
+
+.mission-box p {
+    position: relative;
+
+    color: #aaa;
+
+    font-size: 12px;
+
+    line-height: 1.9;
+}
+
+
+/* =========================================
+   VISION
+========================================= */
+
+.vision-section {
+    padding: 90px 7%;
+
+    background: #f4f0e8;
+}
+
+.vision-container {
+    max-width: 1150px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+.vision-card {
+    padding: 40px;
+
+    background: #ffffff;
+
+    border-radius: 12px;
+
+    border: 1px solid #e5e0d8;
+
+    transition: 0.3s ease;
+}
+
+.vision-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,0.07);
+}
+
+.vision-card span {
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: #b51d1d;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.vision-card h3 {
+    margin-bottom: 12px;
+
+    font-size: 24px;
+}
+
+.vision-card p {
+    color: #777;
+
+    font-size: 12px;
+
+    line-height: 1.9;
+}
+
+
+/* =========================================
+   WHY CHOOSE US
+========================================= */
+
+.why-section {
+    padding: 90px 7%;
+
+    background: #ffffff;
+}
+
+.why-container {
+    max-width: 1150px;
+
+    margin: auto;
+}
+
+.why-heading {
+    max-width: 650px;
+
+    margin-bottom: 45px;
+}
+
+.why-heading span {
+    color: #b51d1d;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.why-heading h2 {
+    margin-top: 10px;
+
+    font-size: 40px;
+
+    line-height: 1.2;
+}
+
+.why-heading p {
+    margin-top: 15px;
+
+    color: #777;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+}
+
+
+/* WHY GRID */
+
+.why-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.why-card {
+    padding: 30px;
+
+    background: #f4f0e8;
+
+    border-radius: 12px;
+
+    transition: 0.3s ease;
+}
+
+.why-card:hover {
+    background: #111111;
+
+    color: white;
+
+    transform: translateY(-5px);
+}
+
+.why-card-number {
+    color: #b51d1d;
+
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.why-card h3 {
+    margin: 10px 0;
+
+    font-size: 17px;
+}
+
+.why-card p {
+    color: #777;
+
+    font-size: 12px;
+
+    line-height: 1.8;
+}
+
+.why-card:hover p {
+    color: #aaa;
+}
+
+
+/* =========================================
+   SCHOOL LIFE
+========================================= */
+
+.school-life {
+    padding: 90px 7%;
+
+    background: #111111;
+
+    color: white;
+}
+
+.school-life-container {
+    max-width: 1150px;
+
+    margin: auto;
+}
+
+.school-life-heading {
+    max-width: 650px;
+
+    margin-bottom: 45px;
+}
+
+.school-life-heading span {
+    color: #e13a3a;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.school-life-heading h2 {
+    margin-top: 10px;
+
+    font-size: 40px;
+
+    line-height: 1.2;
+}
+
+.school-life-heading p {
+    margin-top: 15px;
+
+    color: #999;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   SIDEBAR
+========================================= */
+
+.sidebar {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 255px;
+    height: 100vh;
+
+    background: #111111;
+
+    color: white;
+
+    z-index: 1000;
+
+    display: flex;
+    flex-direction: column;
+
+    border-right: 1px solid #252525;
+}
+
+
+/* LOGO */
+
+.sidebar-logo {
+    padding: 25px 20px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    border-bottom: 1px solid #292929;
+}
+
+.sidebar-logo-icon {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #b51d1d;
+
+    border-radius: 8px;
+
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.sidebar-logo-text h2 {
+    margin: 0;
+
+    font-size: 15px;
+}
+
+.sidebar-logo-text span {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #888;
+
+    font-size: 8px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+
+/* NAVIGATION */
+
+.sidebar-nav {
+    flex: 1;
+
+    padding: 20px 12px;
+
+    overflow-y: auto;
+}
+
+.nav-title {
+    margin: 10px 12px 10px;
+
+    color: #666;
+
+    font-size: 8px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.second-title {
+    margin-top: 25px;
+}
+
+
+.nav-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 12px 14px;
+
+    margin-bottom: 4px;
+
+    color: #888;
+
+    border-radius: 7px;
+
+    font-size: 11px;
+
+    transition: 0.25s ease;
+}
+
+.nav-item:hover {
+    background: #1d1d1d;
+
+    color: white;
+
+    transform: translateX(3px);
+}
+
+
+/* ACTIVE PAGE */
+
+.nav-item.active {
+    background: #b51d1d;
+
+    color: white;
+}
+
+.nav-item.active:hover {
+    background: #b51d1d;
+
+    transform: none;
+}
+
+
+/* ICON */
+
+.nav-icon {
+    width: 18px;
+
+    text-align: center;
+
+    color: #777;
+
+    font-size: 13px;
+}
+
+.nav-item.active .nav-icon {
+    color: white;
+}
+
+
+/* SIDEBAR BOTTOM */
+
+.sidebar-bottom {
+    padding: 18px;
+
+    border-top: 1px solid #292929;
+}
+
+.location-box {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.location-icon {
+    color: #d83232;
+
+    font-size: 12px;
+}
+
+.location-box strong {
+    display: block;
+
+    color: #aaa;
+
+    font-size: 9px;
+}
+
+.location-box small {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #666;
+
+    font-size: 8px;
+}
+
+.sidebar-year {
+    margin-top: 15px;
+
+    color: #555;
+
+    font-size: 8px;
+}
+
+
+/* =========================================
+   MAIN CONTENT
+========================================= */
+
+.main-content {
+    margin-left: 255px;
+
+    min-height: 100vh;
+}
+
+
+/* =========================================
+   MOBILE HEADER
+========================================= */
+
+.mobile-header {
+    display: none;
+}
+
+
+/* =========================================
+   OVERLAY
+========================================= */
+
+.overlay {
+    display: none;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .sidebar {
+        left: -280px;
+
+        width: 270px;
+
+        transition: left 0.3s ease;
+    }
+
+    .sidebar.open {
+        left: 0;
+    }
+
+
+    .main-content {
+        margin-left: 0;
+
+        padding-top: 65px;
+    }
+
+
+    .mobile-header {
+        position: fixed;
+
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 65px;
+
+        padding: 0 18px;
+
+        background: #111111;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: space-between;
+
+        z-index: 900;
+    }
+
+
+    .mobile-logo {
+        display: flex;
+
+        align-items: center;
+
+        gap: 10px;
+    }
+
+
+    .logo-box {
+        width: 35px;
+        height: 35px;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        background: #b51d1d;
+
+        color: white;
+
+        border-radius: 6px;
+
+        font-size: 11px;
+        font-weight: 800;
+    }
+
+
+    .mobile-logo-text strong {
+        display: block;
+
+        color: white;
+
+        font-size: 12px;
+    }
+
+
+    .mobile-logo-text span {
+        display: block;
+
+        margin-top: 2px;
+
+        color: #777;
+
+        font-size: 7px;
+
+        text-transform: uppercase;
+
+        letter-spacing: 1px;
+    }
+
+
+    .menu-btn {
+        width: 40px;
+        height: 40px;
+
+        border: 0;
+
+        border-radius: 6px;
+
+        background: #b51d1d;
+
+        color: white;
+
+        font-size: 20px;
+
+        cursor: pointer;
+    }
+
+
+    .overlay {
+        position: fixed;
+
+        inset: 0;
+
+        background: rgba(0,0,0,0.65);
+
+        z-index: 950;
+    }
+
+    .overlay.show {
+        display: block;
+    }
+
+}
+
+/* SCHOOL LIFE GRID */
+
+.school-life-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+.life-card {
+    min-height: 190px;
+
+    padding: 25px;
+
+    background: #1c1c1c;
+
+    border: 1px solid #292929;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-end;
+
+    transition: 0.3s ease;
+}
+
+.life-card:hover {
+    background: #b51d1d;
+
+    transform: translateY(-5px);
+}
+
+.life-card span {
+    margin-bottom: 10px;
+
+    color: #e13a3a;
+
+    font-size: 24px;
+}
+
+.life-card:hover span {
+    color: white;
+}
+
+.life-card h3 {
+    margin-bottom: 7px;
+
+    font-size: 17px;
+}
+
+.life-card p {
+    color: #888;
+
+    font-size: 11px;
+
+    line-height: 1.7;
+}
+
+.life-card:hover p {
+    color: #eee;
+}
+
+
+/* =========================================
+   ABOUT CTA
+========================================= */
+
+.about-cta {
+    padding: 70px 7%;
+
+    background: #f4f0e8;
+}
+
+.about-cta-box {
+    max-width: 1150px;
+
+    margin: auto;
+
+    padding: 55px;
+
+    background: #b51d1d;
+
+    color: white;
+
+    border-radius: 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+.about-cta-box h2 {
+    margin-bottom: 10px;
+
+    font-size: 35px;
+}
+
+.about-cta-box p {
+    color: #f3cccc;
+
+    font-size: 12px;
+
+    line-height: 1.7;
+}
+
+.about-cta-btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 14px 25px;
+
+    background: white;
+
+    color: #111111;
+
+    border-radius: 7px;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    transition: 0.3s ease;
+}
+
+.about-cta-btn:hover {
+    background: #111111;
+
+    color: white;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1100px) {
+
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .school-life-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .about-hero {
+        min-height: 380px;
+
+        padding: 60px 7%;
+    }
+
+    .about-hero::after {
+        font-size: 80px;
+
+        right: -10px;
+        bottom: 10px;
+    }
+
+    .about-hero-content h1 {
+        font-size: 40px;
+
+        letter-spacing: -1px;
+    }
+
+    .about-hero-content p {
+        font-size: 12px;
+
+        line-height: 1.8;
+    }
+
+
+    /* INTRO */
+
+    .about-intro {
+        padding: 65px 6%;
+    }
+
+    .about-intro-container {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .about-intro-image img {
+        height: 300px;
+    }
+
+    .about-intro-text h2 {
+        font-size: 29px;
+    }
+
+
+    /* VALUES */
+
+    .values-section {
+        padding: 65px 6%;
+    }
+
+    .values-heading h2 {
+        font-size: 29px;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* MISSION */
+
+    .mission-section {
+        padding: 65px 6%;
+    }
+
+    .mission-container {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .mission-text h2 {
+        font-size: 29px;
+    }
+
+    .mission-box {
+        padding: 30px;
+    }
+
+
+    /* VISION */
+
+    .vision-section {
+        padding: 65px 6%;
+    }
+
+    .vision-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* WHY */
+
+    .why-section {
+        padding: 65px 6%;
+    }
+
+    .why-heading h2 {
+        font-size: 29px;
+    }
+
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* SCHOOL LIFE */
+
+    .school-life {
+        padding: 65px 6%;
+    }
+
+    .school-life-heading h2 {
+        font-size: 29px;
+    }
+
+    .school-life-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* CTA */
+
+    .about-cta {
+        padding: 50px 6%;
+    }
+
+    .about-cta-box {
+        padding: 35px 25px;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .about-cta-box h2 {
+        font-size: 28px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL PHONES
+========================================= */
+
+@media (max-width: 400px) {
+
+    .about-hero-content h1 {
+        font-size: 34px;
+    }
+
+    .about-intro-text h2,
+    .mission-text h2,
+    .values-heading h2,
+    .why-heading h2,
+    .school-life-heading h2 {
+        font-size: 27px;
+    }
+
+    .about-cta-box h2 {
+        font-size: 25px;
+    }
+
+}

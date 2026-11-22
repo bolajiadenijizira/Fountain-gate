@@ -1,0 +1,1821 @@
+/* =========================================================
+   FOUNTAIN GATE MONTESSORI SCHOOL
+   TEACHERS PAGE
+   ========================================================= */
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.teachers-hero {
+    min-height: 500px;
+    padding: 80px 8%;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+
+    background: #111111;
+    color: #ffffff;
+
+    overflow: hidden;
+}
+
+.teachers-hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 430px;
+    height: 430px;
+
+    right: -190px;
+    top: -190px;
+
+    border: 70px solid rgba(181, 29, 29, 0.08);
+
+    border-radius: 50%;
+}
+
+.teachers-hero::after {
+    content: "";
+
+    position: absolute;
+
+    width: 230px;
+    height: 230px;
+
+    right: 100px;
+    bottom: -160px;
+
+    border: 45px solid rgba(255, 255, 255, 0.025);
+
+    border-radius: 50%;
+}
+
+.teachers-hero-content {
+    width: 100%;
+    max-width: 720px;
+
+    position: relative;
+    z-index: 2;
+}
+
+.teachers-hero-content > span {
+    color: #d83232;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    letter-spacing: 2.5px;
+}
+
+.teachers-hero-content h1 {
+    margin: 15px 0 20px;
+
+    font-size: clamp(40px, 5vw, 62px);
+    font-weight: 700;
+
+    line-height: 1.08;
+
+    letter-spacing: -2px;
+}
+
+.teachers-hero-content h1 strong {
+    display: block;
+
+    color: #d83232;
+}
+
+.teachers-hero-content p {
+    max-width: 620px;
+
+    color: #999999;
+
+    font-size: 12px;
+
+    line-height: 1.9;
+}
+
+
+/* =========================================================
+   HERO BUTTONS
+   ========================================================= */
+
+.hero-buttons {
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 28px;
+
+    flex-wrap: wrap;
+}
+
+.teacher-btn,
+.teacher-btn-outline {
+    min-height: 42px;
+
+    padding: 0 20px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 6px;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    transition: all 0.25s ease;
+}
+
+.teacher-btn {
+    background: #b51d1d;
+
+    color: #ffffff;
+}
+
+.teacher-btn:hover {
+    background: #ffffff;
+
+    color: #111111;
+
+    transform: translateY(-2px);
+}
+
+.teacher-btn-outline {
+    border: 1px solid #3a3a3a;
+
+    color: #dddddd;
+}
+
+.teacher-btn-outline:hover {
+    border-color: #b51d1d;
+
+    color: #ffffff;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   INTRODUCTION
+   ========================================================= */
+
+.teachers-intro {
+    padding: 85px 7%;
+
+    background: #ffffff;
+}
+
+.intro-container {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1.3fr 0.7fr;
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+.intro-text > span {
+    color: #b51d1d;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.intro-text h2 {
+    max-width: 650px;
+
+    margin: 12px 0 20px;
+
+    font-size: 38px;
+
+    line-height: 1.2;
+
+    letter-spacing: -1px;
+}
+
+.intro-text p {
+    max-width: 680px;
+
+    margin-bottom: 13px;
+
+    color: #777777;
+
+    font-size: 12px;
+
+    line-height: 1.9;
+}
+
+
+/* =========================================================
+   INTRO CARD
+   ========================================================= */
+
+.intro-card {
+    padding: 35px;
+
+    background: #111111;
+
+    color: #ffffff;
+
+    border-radius: 10px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.intro-card::after {
+    content: "";
+
+    position: absolute;
+
+    width: 160px;
+    height: 160px;
+
+    right: -75px;
+    bottom: -75px;
+
+    border: 35px solid rgba(181, 29, 29, 0.12);
+
+    border-radius: 50%;
+}
+
+.intro-number {
+    position: relative;
+
+    z-index: 2;
+
+    color: #d83232;
+
+    font-size: 34px;
+
+    font-weight: 800;
+}
+
+.intro-card h3 {
+    position: relative;
+
+    z-index: 2;
+
+    margin: 10px 0;
+
+    font-size: 19px;
+}
+
+.intro-card p {
+    position: relative;
+
+    z-index: 2;
+
+    color: #888888;
+
+    font-size: 11px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   SECTION HEADING
+   ========================================================= */
+
+.section-heading {
+    width: 100%;
+    max-width: 650px;
+
+    margin: 0 auto 45px;
+
+    text-align: center;
+}
+
+.section-heading > span {
+    color: #b51d1d;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    margin: 10px 0 13px;
+
+    font-size: 36px;
+
+    line-height: 1.2;
+
+    letter-spacing: -1px;
+}
+
+.section-heading p {
+    color: #777777;
+
+    font-size: 12px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   TEACHERS SECTION
+   ========================================================= */
+
+.teachers-section {
+    padding: 85px 7%;
+
+    background: #f4f0e8;
+}
+
+.teacher-grid {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+
+/* =========================================================
+   TEACHER CARD
+   ========================================================= */
+
+.teacher-card {
+    background: #ffffff;
+
+    border: 1px solid #e6e1d9;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    transition: all 0.25s ease;
+}
+
+.teacher-card:hover {
+    transform: translateY(-6px);
+
+    border-color: transparent;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================================
+   TEACHER IMAGE
+   ========================================================= */
+
+.teacher-image {
+    height: 210px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #ebe5da;
+
+    overflow: hidden;
+}
+
+.teacher-placeholder {
+    width: 95px;
+    height: 95px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #111111;
+
+    color: #ffffff;
+
+    border-radius: 50%;
+
+    font-size: 35px;
+}
+
+.teacher-role {
+    position: absolute;
+
+    left: 15px;
+    bottom: 15px;
+
+    padding: 7px 10px;
+
+    background: #b51d1d;
+
+    color: #ffffff;
+
+    border-radius: 4px;
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   TEACHER INFO
+   ========================================================= */
+
+.teacher-info {
+    padding: 25px;
+}
+
+.teacher-number {
+    color: #b51d1d;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.teacher-info h3 {
+    margin: 9px 0 10px;
+
+    font-size: 18px;
+}
+
+.teacher-info p {
+    color: #777777;
+
+    font-size: 11px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   TEACHER TAGS
+   ========================================================= */
+
+.teacher-tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 6px;
+
+    margin-top: 18px;
+}
+
+.teacher-tags span {
+    padding: 6px 9px;
+
+    background: #f4f0e8;
+
+    color: #555555;
+
+    border-radius: 4px;
+
+    font-size: 8px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   TEACHING APPROACH
+   ========================================================= */
+
+.teaching-approach {
+    padding: 85px 7%;
+
+    background: #111111;
+
+    color: #ffffff;
+}
+
+.dark-heading h2 {
+    color: #ffffff;
+}
+
+.dark-heading p {
+    color: #888888;
+}
+
+.approach-grid {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+.approach-card {
+    min-height: 210px;
+
+    padding: 27px;
+
+    background: #191919;
+
+    border: 1px solid #292929;
+
+    border-radius: 9px;
+
+    transition: all 0.25s ease;
+}
+
+.approach-card:hover {
+    border-color: #b51d1d;
+
+    transform: translateY(-5px);
+}
+
+.approach-card > span {
+    display: block;
+
+    margin-bottom: 22px;
+
+    color: #d83232;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.approach-card h3 {
+    margin-bottom: 10px;
+
+    color: #ffffff;
+
+    font-size: 16px;
+
+    line-height: 1.4;
+}
+
+.approach-card p {
+    color: #888888;
+
+    font-size: 10px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   VALUES
+   ========================================================= */
+
+.teacher-values {
+    padding: 85px 7%;
+
+    background: #ffffff;
+}
+
+.values-container {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.1fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+.values-text > span {
+    color: #b51d1d;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.values-text h2 {
+    margin: 12px 0 18px;
+
+    font-size: 36px;
+
+    line-height: 1.2;
+
+    letter-spacing: -1px;
+}
+
+.values-text p {
+    color: #777777;
+
+    font-size: 12px;
+
+    line-height: 1.9;
+}
+
+
+/* =========================================================
+   VALUES LIST
+   ========================================================= */
+
+.values-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.value-item {
+    padding: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    background: #f4f0e8;
+
+    border-radius: 8px;
+
+    transition: all 0.25s ease;
+}
+
+.value-item:hover {
+    background: #111111;
+
+    transform: translateX(5px);
+}
+
+.value-item strong {
+    min-width: 125px;
+
+    color: #b51d1d;
+
+    font-size: 13px;
+}
+
+.value-item span {
+    color: #777777;
+
+    font-size: 10px;
+
+    line-height: 1.7;
+}
+
+.value-item:hover span {
+    color: #999999;
+}
+
+
+/* =========================================================
+   CTA
+   ========================================================= */
+
+.teachers-cta {
+    padding: 60px 7%;
+
+    background: #f4f0e8;
+}
+
+.teachers-cta-box {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 45px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 35px;
+
+    background: #b51d1d;
+
+    color: #ffffff;
+
+    border-radius: 10px;
+}
+
+.teachers-cta-box > div:first-child {
+    max-width: 620px;
+}
+
+.teachers-cta-box span {
+    color: #f4cccc;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.teachers-cta-box h2 {
+    margin: 10px 0;
+
+    font-size: 34px;
+
+    line-height: 1.2;
+
+    letter-spacing: -1px;
+}
+
+.teachers-cta-box p {
+    color: #f3caca;
+
+    font-size: 11px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   CTA BUTTONS
+   ========================================================= */
+
+.cta-buttons {
+    display: flex;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+}
+
+.cta-apply,
+.cta-contact {
+    min-height: 40px;
+
+    padding: 0 19px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 6px;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    transition: all 0.25s ease;
+}
+
+.cta-apply {
+    background: #ffffff;
+
+    color: #111111;
+}
+
+.cta-contact {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+
+    color: #ffffff;
+}
+
+.cta-apply:hover {
+    background: #111111;
+
+    color: #ffffff;
+
+    transform: translateY(-2px);
+}
+
+.cta-contact:hover {
+    background: #ffffff;
+
+    color: #111111;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   FOOTER
+   This styles the same footer classes used in teachers.html
+   ========================================================= */
+
+.site-footer {
+    background: #111111;
+
+    color: #ffffff;
+
+    padding: 65px 7% 0;
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1.5fr 0.8fr 0.8fr 1fr;
+
+    gap: 45px;
+}
+
+
+/* Footer logo */
+
+.footer-logo {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 18px;
+}
+
+.footer-logo-icon {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #b51d1d;
+
+    color: #ffffff;
+
+    border-radius: 7px;
+
+    font-size: 11px;
+
+    font-weight: 800;
+}
+
+.footer-logo h3 {
+    margin: 0;
+
+    font-size: 15px;
+}
+
+.footer-logo span {
+    color: #888888;
+
+    font-size: 9px;
+}
+
+.footer-about > p {
+    max-width: 300px;
+
+    margin-bottom: 18px;
+
+    color: #888888;
+
+    font-size: 10px;
+
+    line-height: 1.8;
+}
+
+.footer-location {
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    color: #999999;
+
+    font-size: 10px;
+}
+
+.footer-location i {
+    color: #b51d1d;
+}
+
+
+/* Footer columns */
+
+.footer-column h4 {
+    margin-bottom: 18px;
+
+    color: #ffffff;
+
+    font-size: 12px;
+}
+
+.footer-column > a {
+    display: block;
+
+    width: fit-content;
+
+    margin-bottom: 11px;
+
+    color: #888888;
+
+    font-size: 10px;
+
+    transition: all 0.2s ease;
+}
+
+.footer-column > a:hover {
+    color: #d83232;
+
+    transform: translateX(3px);
+}
+
+
+/* Footer contact */
+
+.footer-contact p {
+    margin-bottom: 11px;
+
+    color: #888888;
+
+    font-size: 10px;
+
+    line-height: 1.6;
+}
+
+.footer-contact p i {
+    width: 18px;
+
+    color: #b51d1d;
+}
+
+
+/* Social icons */
+
+.footer-socials {
+    display: flex;
+
+    gap: 7px;
+
+    margin-top: 18px;
+}
+
+.footer-socials a {
+    width: 31px;
+    height: 31px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #1c1c1c;
+
+    color: #999999;
+
+    border-radius: 5px;
+
+    font-size: 11px;
+
+    transition: all 0.25s ease;
+}
+
+.footer-socials a:hover {
+    background: #b51d1d;
+
+    color: #ffffff;
+
+    transform: translateY(-3px);
+}
+
+
+/* Footer bottom */
+
+.footer-bottom {
+    max-width: 1100px;
+
+    margin: 50px auto 0;
+
+    padding: 20px 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    border-top: 1px solid #292929;
+}
+
+.footer-bottom p {
+    margin: 0;
+
+    color: #666666;
+
+    font-size: 9px;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .teacher-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .approach-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .intro-container,
+    .values-container {
+        gap: 40px;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .teachers-hero {
+        min-height: 470px;
+
+        padding: 65px 6%;
+    }
+
+    .teachers-hero-content h1 {
+        font-size: 40px;
+
+        letter-spacing: -1px;
+    }
+
+    .teachers-hero-content p {
+        font-size: 11px;
+
+        line-height: 1.8;
+    }
+
+
+    /* Hero buttons */
+
+    .hero-buttons {
+        width: 100%;
+
+        flex-direction: column;
+
+        gap: 8px;
+    }
+
+    .teacher-btn,
+    .teacher-btn-outline {
+        width: 100%;
+    }
+
+
+    /* Introduction */
+
+    .teachers-intro {
+        padding: 65px 6%;
+    }
+
+    .intro-container {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .intro-text h2 {
+        font-size: 29px;
+    }
+
+
+    /* Teachers */
+
+    .teachers-section {
+        padding: 65px 6%;
+    }
+
+    .section-heading {
+        margin-bottom: 35px;
+    }
+
+    .section-heading h2 {
+        font-size: 29px;
+    }
+
+    .teacher-grid {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+    .teacher-image {
+        height: 220px;
+    }
+
+
+    /* Approach */
+
+    .teaching-approach {
+        padding: 65px 6%;
+    }
+
+    .approach-grid {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+    .approach-card {
+        min-height: auto;
+
+        padding: 25px;
+    }
+
+
+    /* Values */
+
+    .teacher-values {
+        padding: 65px 6%;
+    }
+
+    .values-container {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .values-text h2 {
+        font-size: 29px;
+    }
+
+    .value-item {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 8px;
+    }
+
+    .value-item strong {
+        min-width: auto;
+    }
+
+
+    /* CTA */
+
+    .teachers-cta {
+        padding: 50px 6%;
+    }
+
+    .teachers-cta-box {
+        padding: 32px 24px;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 25px;
+    }
+
+    .teachers-cta-box h2 {
+        font-size: 28px;
+    }
+
+    .cta-buttons {
+        width: 100%;
+
+        flex-direction: column;
+
+        gap: 8px;
+    }
+
+    .cta-apply,
+    .cta-contact {
+        width: 100%;
+    }
+
+
+    /* Footer */
+
+    .site-footer {
+        padding: 50px 6% 0;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 8px;
+
+        margin-top: 35px;
+    }
+}
+
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+    .teachers-hero-content h1 {
+        font-size: 34px;
+    }
+
+    .intro-text h2,
+    .values-text h2 {
+        font-size: 26px;
+    }
+
+    .section-heading h2 {
+        font-size: 26px;
+    }
+
+    .teachers-cta-box h2 {
+        font-size: 25px;
+    }
+
+    .teacher-info {
+        padding: 22px;
+    }
+
+    .approach-card {
+        padding: 22px;
+    }
+}
+
+/* =========================================================
+   FOUNTAIN GATE MONTESSORI SCHOOL
+   SIDEBAR
+   ========================================================= */
+
+.sidebar {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 250px;
+    height: 100vh;
+
+    background: #111111;
+    color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+
+    z-index: 1000;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    border-right: 1px solid #242424;
+
+    scrollbar-width: thin;
+    scrollbar-color: #b51d1d #111111;
+}
+
+
+/* =========================================================
+   SIDEBAR SCROLLBAR
+   ========================================================= */
+
+.sidebar::-webkit-scrollbar {
+    width: 4px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: #111111;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: #b51d1d;
+    border-radius: 20px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background: #d83232;
+}
+
+
+/* =========================================================
+   LOGO
+   ========================================================= */
+
+.sidebar-logo {
+    min-height: 85px;
+
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    border-bottom: 1px solid #242424;
+
+    flex-shrink: 0;
+}
+
+.sidebar-logo-icon {
+    width: 43px;
+    height: 43px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #b51d1d;
+
+    color: #ffffff;
+
+    border-radius: 7px;
+
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.sidebar-logo-text h2 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.sidebar-logo-text span {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #888888;
+
+    font-size: 8px;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+.sidebar-nav {
+    padding: 18px 12px 20px;
+
+    flex: 1;
+}
+
+.nav-title {
+    margin: 8px 10px 10px;
+
+    color: #666666;
+
+    font-size: 8px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.8px;
+}
+
+.second-title {
+    margin-top: 25px;
+}
+
+
+/* =========================================================
+   NAV ITEM
+   ========================================================= */
+
+.nav-item {
+    min-height: 44px;
+
+    margin-bottom: 4px;
+
+    padding: 0 12px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    color: #999999;
+
+    border-radius: 7px;
+
+    font-size: 10px;
+    font-weight: 500;
+
+    text-decoration: none;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.nav-item:hover {
+    background: #1c1c1c;
+
+    color: #ffffff;
+
+    transform: translateX(2px);
+}
+
+
+/* =========================================================
+   ACTIVE NAV ITEM
+   ========================================================= */
+
+.nav-item.active {
+    background: #b51d1d;
+
+    color: #ffffff;
+}
+
+.nav-item.active:hover {
+    background: #b51d1d;
+
+    color: #ffffff;
+
+    transform: none;
+}
+
+
+/* =========================================================
+   NAV ICON
+   ========================================================= */
+
+.nav-icon {
+    width: 28px;
+    height: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    color: #777777;
+
+    font-size: 12px;
+
+    border-radius: 5px;
+}
+
+.nav-item:hover .nav-icon {
+    color: #ffffff;
+}
+
+.nav-item.active .nav-icon {
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   SIDEBAR BOTTOM
+   ========================================================= */
+
+.sidebar-bottom {
+    padding: 15px 12px 18px;
+
+    border-top: 1px solid #242424;
+
+    flex-shrink: 0;
+}
+
+.location-box {
+    padding: 12px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    background: #191919;
+
+    border: 1px solid #242424;
+
+    border-radius: 7px;
+}
+
+.location-icon {
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(181, 29, 29, 0.12);
+
+    color: #d83232;
+
+    border-radius: 5px;
+
+    font-size: 11px;
+}
+
+.location-box strong {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #dddddd;
+
+    font-size: 9px;
+}
+
+.location-box small {
+    display: block;
+
+    color: #666666;
+
+    font-size: 8px;
+}
+
+
+/* =========================================================
+   MAIN CONTENT
+   ========================================================= */
+
+.main-content {
+    min-height: 100vh;
+
+    margin-left: 250px;
+}
+
+
+/* =========================================================
+   MOBILE HEADER
+   ========================================================= */
+
+.mobile-header {
+    display: none;
+
+    height: 65px;
+
+    padding: 0 18px;
+
+    align-items: center;
+    justify-content: space-between;
+
+    background: #111111;
+
+    border-bottom: 1px solid #242424;
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 999;
+}
+
+
+/* =========================================================
+   MOBILE LOGO
+   ========================================================= */
+
+.mobile-logo {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.logo-box {
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #b51d1d;
+
+    color: #ffffff;
+
+    border-radius: 6px;
+
+    font-size: 9px;
+    font-weight: 800;
+}
+
+.mobile-logo-text strong {
+    display: block;
+
+    color: #ffffff;
+
+    font-size: 11px;
+}
+
+.mobile-logo-text span {
+    display: block;
+
+    margin-top: 2px;
+
+    color: #777777;
+
+    font-size: 7px;
+}
+
+
+/* =========================================================
+   MOBILE MENU BUTTON
+   ========================================================= */
+
+.menu-btn {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #1c1c1c;
+
+    color: #ffffff;
+
+    border: 1px solid #303030;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    transition: all 0.2s ease;
+}
+
+.menu-btn:hover {
+    background: #b51d1d;
+
+    border-color: #b51d1d;
+}
+
+
+/* =========================================================
+   OVERLAY
+   ========================================================= */
+
+.overlay {
+    display: none;
+
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.55);
+
+    z-index: 998;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .sidebar {
+        width: 230px;
+    }
+
+    .main-content {
+        margin-left: 230px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .mobile-header {
+        display: flex;
+    }
+
+
+    .sidebar {
+        width: 250px;
+
+        left: -250px;
+
+        transition: left 0.3s ease;
+
+        z-index: 1001;
+    }
+
+
+    /* Open sidebar */
+
+    .sidebar.active {
+        left: 0;
+    }
+
+
+    .main-content {
+        margin-left: 0;
+
+        padding-top: 65px;
+    }
+
+
+    /* Show overlay */
+
+    .overlay.active {
+        display: block;
+    }
+
+
+    /* Make sidebar scroll independently */
+
+    .sidebar {
+        height: 100vh;
+
+        overflow-y: auto;
+        overflow-x: hidden;
+
+        -webkit-overflow-scrolling: touch;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+    .sidebar {
+        width: 235px;
+
+        left: -235px;
+    }
+
+    .sidebar.active {
+        left: 0;
+    }
+
+    .nav-item {
+        min-height: 42px;
+
+        font-size: 9px;
+    }
+
+}

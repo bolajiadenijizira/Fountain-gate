@@ -1,0 +1,1062 @@
+/* =========================================================
+   FOUNTAIN GATE MONTESSORI SCHOOL
+   ADMISSIONS PAGE
+   ========================================================= */
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.admission-hero {
+    min-height: 500px;
+    padding: 80px 8%;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+
+    background: #111111;
+    color: #ffffff;
+
+    overflow: hidden;
+}
+
+.admission-hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 420px;
+    height: 420px;
+
+    right: -180px;
+    top: -180px;
+
+    border: 70px solid rgba(181, 29, 29, 0.08);
+    border-radius: 50%;
+}
+
+.admission-hero::after {
+    content: "";
+
+    position: absolute;
+
+    width: 220px;
+    height: 220px;
+
+    right: 100px;
+    bottom: -150px;
+
+    border: 45px solid rgba(255, 255, 255, 0.025);
+    border-radius: 50%;
+}
+
+.admission-hero-content {
+    max-width: 720px;
+
+    position: relative;
+    z-index: 2;
+}
+
+.admission-hero-content > span {
+    color: #d83232;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    letter-spacing: 2.5px;
+}
+
+.admission-hero-content h1 {
+    margin: 15px 0 20px;
+
+    font-size: clamp(40px, 5vw, 62px);
+    font-weight: 700;
+
+    line-height: 1.08;
+    letter-spacing: -2px;
+}
+
+.admission-hero-content h1 strong {
+    display: block;
+    color: #d83232;
+}
+
+.admission-hero-content p {
+    max-width: 620px;
+
+    color: #999999;
+
+    font-size: 12px;
+    line-height: 1.9;
+}
+
+
+/* =========================================================
+   HERO BUTTONS
+   ========================================================= */
+
+.hero-buttons {
+    display: flex;
+    gap: 10px;
+
+    margin-top: 28px;
+
+    flex-wrap: wrap;
+}
+
+.admission-btn,
+.admission-btn-outline {
+    min-height: 42px;
+
+    padding: 0 20px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 6px;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    transition: all 0.25s ease;
+}
+
+.admission-btn {
+    background: #b51d1d;
+    color: #ffffff;
+}
+
+.admission-btn:hover {
+    background: #ffffff;
+    color: #111111;
+
+    transform: translateY(-2px);
+}
+
+.admission-btn-outline {
+    border: 1px solid #3a3a3a;
+    color: #dddddd;
+}
+
+.admission-btn-outline:hover {
+    border-color: #b51d1d;
+    color: #ffffff;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   WELCOME SECTION
+   ========================================================= */
+
+.admission-welcome {
+    padding: 85px 7%;
+    background: #ffffff;
+}
+
+.welcome-container {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1.3fr 0.7fr;
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+.welcome-text > span {
+    color: #b51d1d;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.welcome-text h2 {
+    max-width: 620px;
+
+    margin: 12px 0 20px;
+
+    font-size: 38px;
+
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.welcome-text p {
+    max-width: 680px;
+
+    margin-bottom: 13px;
+
+    color: #777777;
+
+    font-size: 12px;
+    line-height: 1.9;
+}
+
+
+/* Welcome card */
+
+.welcome-box {
+    padding: 35px;
+
+    background: #111111;
+
+    border-radius: 10px;
+
+    color: #ffffff;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.welcome-box::after {
+    content: "";
+
+    position: absolute;
+
+    width: 150px;
+    height: 150px;
+
+    right: -70px;
+    bottom: -70px;
+
+    border: 35px solid rgba(181, 29, 29, 0.1);
+
+    border-radius: 50%;
+}
+
+.welcome-number {
+    position: relative;
+    z-index: 2;
+
+    color: #d83232;
+
+    font-size: 34px;
+    font-weight: 800;
+}
+
+.welcome-box h3 {
+    position: relative;
+    z-index: 2;
+
+    margin: 10px 0;
+
+    font-size: 19px;
+}
+
+.welcome-box p {
+    position: relative;
+    z-index: 2;
+
+    color: #888888;
+
+    font-size: 11px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   GENERAL SECTION HEADING
+   ========================================================= */
+
+.section-heading {
+    width: 100%;
+    max-width: 650px;
+
+    margin: 0 auto 45px;
+
+    text-align: center;
+}
+
+.section-heading > span {
+    color: #b51d1d;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    margin: 10px 0 13px;
+
+    color: inherit;
+
+    font-size: 36px;
+
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.section-heading p {
+    color: #777777;
+
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   BENEFITS
+   ========================================================= */
+
+.admission-benefits {
+    padding: 85px 7%;
+    background: #f4f0e8;
+}
+
+.benefit-grid {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+.benefit-card {
+    min-height: 210px;
+
+    padding: 27px;
+
+    background: #ffffff;
+
+    border: 1px solid #e6e1d9;
+
+    border-radius: 9px;
+
+    transition: all 0.25s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+
+    border-color: transparent;
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.07);
+}
+
+.benefit-number {
+    margin-bottom: 22px;
+
+    color: #b51d1d;
+
+    font-size: 9px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.benefit-card h3 {
+    margin-bottom: 10px;
+
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.benefit-card p {
+    color: #777777;
+
+    font-size: 11px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   REQUIREMENTS
+   ========================================================= */
+
+.requirements-section {
+    padding: 85px 7%;
+    background: #ffffff;
+}
+
+.requirements-container {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 0.8fr 1.2fr;
+
+    gap: 65px;
+
+    align-items: start;
+}
+
+.requirements-intro {
+    position: sticky;
+    top: 30px;
+}
+
+.requirements-intro > span {
+    color: #b51d1d;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.requirements-intro h2 {
+    margin: 12px 0 18px;
+
+    font-size: 36px;
+
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.requirements-intro p {
+    color: #777777;
+
+    font-size: 12px;
+    line-height: 1.9;
+}
+
+
+/* Requirement list */
+
+.requirements-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.requirement-item {
+    padding: 20px;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 15px;
+
+    background: #f4f0e8;
+
+    border-radius: 8px;
+
+    transition: all 0.25s ease;
+}
+
+.requirement-item:hover {
+    background: #111111;
+
+    color: #ffffff;
+
+    transform: translateX(4px);
+}
+
+.requirement-icon {
+    width: 38px;
+    height: 38px;
+
+    min-width: 38px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #f7dddd;
+
+    color: #b51d1d;
+
+    border-radius: 6px;
+
+    font-size: 9px;
+    font-weight: 800;
+}
+
+.requirement-item h3 {
+    margin-bottom: 6px;
+
+    font-size: 14px;
+}
+
+.requirement-item p {
+    color: #777777;
+
+    font-size: 10px;
+    line-height: 1.7;
+}
+
+.requirement-item:hover p {
+    color: #999999;
+}
+
+
+/* =========================================================
+   APPLICATION PROCESS
+   ========================================================= */
+
+.process-section {
+    padding: 85px 7%;
+
+    background: #111111;
+
+    color: #ffffff;
+}
+
+.process-section .section-heading p {
+    color: #888888;
+}
+
+.process-grid {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+.process-card {
+    min-height: 190px;
+
+    padding: 28px;
+
+    background: #191919;
+
+    border: 1px solid #292929;
+
+    border-radius: 9px;
+
+    transition: all 0.25s ease;
+}
+
+.process-card:hover {
+    border-color: #b51d1d;
+
+    transform: translateY(-5px);
+}
+
+.process-number {
+    margin-bottom: 22px;
+
+    color: #d83232;
+
+    font-size: 9px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.process-card h3 {
+    margin-bottom: 10px;
+
+    color: #ffffff;
+
+    font-size: 15px;
+}
+
+.process-card p {
+    color: #888888;
+
+    font-size: 10px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   AVAILABLE CLASSES
+   ========================================================= */
+
+.available-section {
+    padding: 85px 7%;
+
+    background: #f4f0e8;
+}
+
+.available-container {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 0.8fr 1.2fr;
+
+    gap: 65px;
+
+    align-items: center;
+}
+
+.available-text > span {
+    color: #b51d1d;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.available-text h2 {
+    margin: 12px 0 18px;
+
+    font-size: 36px;
+
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.available-text p {
+    color: #777777;
+
+    font-size: 12px;
+    line-height: 1.9;
+}
+
+.view-classes-btn {
+    display: inline-flex;
+
+    margin-top: 20px;
+
+    min-height: 40px;
+
+    padding: 0 20px;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #111111;
+
+    color: #ffffff;
+
+    border-radius: 6px;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    transition: all 0.25s ease;
+}
+
+.view-classes-btn:hover {
+    background: #b51d1d;
+
+    transform: translateY(-2px);
+}
+
+
+/* Classes */
+
+.class-list {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 10px;
+}
+
+.class-list div {
+    min-height: 62px;
+
+    padding: 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e0d8;
+
+    border-radius: 8px;
+
+    transition: all 0.25s ease;
+}
+
+.class-list div:hover {
+    background: #111111;
+
+    color: #ffffff;
+
+    transform: translateX(4px);
+}
+
+.class-list span {
+    color: #b51d1d;
+
+    font-size: 9px;
+    font-weight: 800;
+}
+
+.class-list strong {
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   FINAL APPLICATION CTA
+   ========================================================= */
+
+.application-section {
+    padding: 60px 7%;
+
+    background: #f4f0e8;
+}
+
+.application-box {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 45px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 35px;
+
+    background: #b51d1d;
+
+    border-radius: 10px;
+
+    color: #ffffff;
+}
+
+.application-box > div:first-child {
+    max-width: 600px;
+}
+
+.application-box span {
+    color: #f4cccc;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.application-box h2 {
+    margin: 10px 0;
+
+    font-size: 34px;
+
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.application-box p {
+    color: #f3caca;
+
+    font-size: 11px;
+    line-height: 1.8;
+}
+
+.application-actions {
+    display: flex;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+}
+
+.apply-button,
+.phone-button {
+    min-height: 40px;
+
+    padding: 0 19px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 6px;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    transition: all 0.25s ease;
+}
+
+.apply-button {
+    background: #ffffff;
+    color: #111111;
+}
+
+.phone-button {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+
+    color: #ffffff;
+}
+
+.apply-button:hover {
+    background: #111111;
+    color: #ffffff;
+
+    transform: translateY(-2px);
+}
+
+.phone-button:hover {
+    background: #ffffff;
+    color: #111111;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .benefit-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .welcome-container,
+    .requirements-container,
+    .available-container {
+        gap: 40px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .admission-hero {
+        min-height: 470px;
+
+        padding: 65px 6%;
+    }
+
+    .admission-hero-content h1 {
+        font-size: 40px;
+
+        letter-spacing: -1px;
+    }
+
+    .admission-hero-content p {
+        font-size: 11px;
+
+        line-height: 1.8;
+    }
+
+
+    /* Hero buttons */
+
+    .hero-buttons {
+        width: 100%;
+
+        flex-direction: column;
+
+        gap: 8px;
+    }
+
+    .admission-btn,
+    .admission-btn-outline {
+        width: 100%;
+    }
+
+
+    /* Welcome */
+
+    .admission-welcome {
+        padding: 65px 6%;
+    }
+
+    .welcome-container {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .welcome-text h2 {
+        font-size: 29px;
+    }
+
+
+    /* Section headings */
+
+    .section-heading {
+        margin-bottom: 35px;
+    }
+
+    .section-heading h2 {
+        font-size: 29px;
+    }
+
+
+    /* Benefits */
+
+    .admission-benefits {
+        padding: 65px 6%;
+    }
+
+    .benefit-grid {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+    .benefit-card {
+        min-height: auto;
+
+        padding: 25px;
+    }
+
+
+    /* Requirements */
+
+    .requirements-section {
+        padding: 65px 6%;
+    }
+
+    .requirements-container {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .requirements-intro {
+        position: static;
+    }
+
+    .requirements-intro h2 {
+        font-size: 29px;
+    }
+
+
+    /* Process */
+
+    .process-section {
+        padding: 65px 6%;
+    }
+
+    .process-grid {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+    .process-card {
+        min-height: auto;
+
+        padding: 25px;
+    }
+
+
+    /* Available classes */
+
+    .available-section {
+        padding: 65px 6%;
+    }
+
+    .available-container {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .available-text h2 {
+        font-size: 29px;
+    }
+
+    .class-list {
+        grid-template-columns: 1fr;
+
+        gap: 8px;
+    }
+
+
+    /* Final CTA */
+
+    .application-section {
+        padding: 50px 6%;
+    }
+
+    .application-box {
+        padding: 32px 24px;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 25px;
+    }
+
+    .application-box h2 {
+        font-size: 28px;
+    }
+
+    .application-actions {
+        width: 100%;
+
+        flex-direction: column;
+
+        gap: 8px;
+    }
+
+    .apply-button,
+    .phone-button {
+        width: 100%;
+    }
+}
+
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+    .admission-hero-content h1 {
+        font-size: 34px;
+    }
+
+    .welcome-text h2,
+    .requirements-intro h2,
+    .available-text h2 {
+        font-size: 26px;
+    }
+
+    .section-heading h2 {
+        font-size: 26px;
+    }
+
+    .application-box h2 {
+        font-size: 25px;
+    }
+}
