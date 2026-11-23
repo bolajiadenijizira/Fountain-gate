@@ -165,3 +165,23 @@ footer span{color:#a9b8d6}
 /* school logo badge */
 .logo-box,.sidebar-logo-icon,.footer-logo-icon{background:none;padding:0;min-width:0;width:auto;height:auto;overflow:visible}
 .logo-box img,.sidebar-logo-icon img,.footer-logo-icon img{display:block;height:46px;width:auto}
+
+.class-age{color:var(--red);font-weight:600;font-size:.85rem;margin:-.2rem 0 .6rem}
+
+/* admissions: checklist and FAQ */
+.documents-section{background:#fff}
+.faq-section{background:var(--soft)}
+.check-list{margin:.4rem 0 0;padding:0;list-style:none;display:grid;gap:.6rem}
+.check-list li{position:relative;padding-left:1.7rem}
+.check-list li::before{content:"\2713";position:absolute;left:0;top:0;color:var(--red);font-weight:800}
+.school-btn,.school-btn-outline{display:inline-flex;align-items:center;justify-content:center;padding:.7rem 1.3rem;border-radius:999px;border:2px solid var(--red);background:var(--red);color:#fff;font:600 .9rem Poppins,sans-serif;text-decoration:none}
+.school-btn-outline{background:transparent;color:var(--navy);border-color:var(--navy)}
+.school-btn:hover{background:#a91f31}
+.school-btn-outline:hover{background:var(--navy);color:#fff}
+.faq-list{max-width:820px}
+.faq-list details{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:0 1.3rem}
+.faq-list summary{cursor:pointer;padding:1.1rem 0;font-weight:600;color:var(--navy);list-style:none;display:flex;justify-content:space-between;gap:1rem}
+.faq-list summary::-webkit-details-marker{display:none}
+.faq-list summary::after{content:"+";color:var(--red);font-size:1.4rem;line-height:1}
+.faq-list details[open] summary::after{content:"\2212"}
+.faq-list details p{color:var(--muted);margin:0 0 1.1rem}

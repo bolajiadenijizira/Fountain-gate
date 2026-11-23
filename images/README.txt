@@ -1,3 +1,2 @@
-Put your photos in this folder using these file names (missing ones show a labelled placeholder):
-school.png, school.jpg, classroom.jpg, stuents.png, library.jpg, sport.png, new.png, laboratory.jpg, activities.jpg,
-anniversary.jpg, school-activities.jpg, students.jpg
+Photos in use: school.jpg, sports.jpg, graduation.jpg, logo.png, favicon files.
+To add more: save a photo here (about 1400px wide, under 300 KB) and add it to gallery.html in the commented-out blocks.
