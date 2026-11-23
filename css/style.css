@@ -71,8 +71,8 @@ section[class$="-hero"] p{max-width:60ch;color:#d3ddf2}
 .star{color:var(--red);font-size:1.5rem}
 
 /* ---------- buttons ---------- */
-[class*="btn"],[class*="button"],.cta-apply,.cta-contact,.quick-phone,.quick-email{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.8rem 1.5rem;border-radius:999px;border:2px solid var(--red);background:var(--red);color:#fff;font:600 .95rem Poppins,sans-serif;text-decoration:none;cursor:pointer;transition:transform .15s,background .15s}
-[class*="btn"]:hover,[class*="button"]:hover,.quick-phone:hover,.quick-email:hover{transform:translateY(-2px);background:#a91f31}
+[class*="btn"],[class$="button"],.cta-apply,.cta-contact,.quick-phone,.quick-email{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.8rem 1.5rem;border-radius:999px;border:2px solid var(--red);background:var(--red);color:#fff;font:600 .95rem Poppins,sans-serif;text-decoration:none;cursor:pointer;transition:transform .15s,background .15s}
+[class*="btn"]:hover,[class$="button"]:hover,.quick-phone:hover,.quick-email:hover{transform:translateY(-2px);background:#a91f31}
 .quick-phone:hover,.quick-email:hover{color:#fff}
 [class*="outline"]{background:transparent;color:var(--navy);border-color:var(--navy)}
 [class*="outline"]:hover{background:var(--navy);color:#fff}
@@ -161,3 +161,7 @@ footer span{color:#a9b8d6}
 .footer-socials a{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:#1c3260}
 .footer-bottom,.copyright{max-width:1100px;margin:2rem auto 0;padding-top:1rem;border-top:1px solid #243a66;display:flex;flex-wrap:wrap;justify-content:space-between;gap:.5rem;font-size:.85rem}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+/* school logo badge */
+.logo-box,.sidebar-logo-icon,.footer-logo-icon{background:none;padding:0;min-width:0;width:auto;height:auto;overflow:visible}
+.logo-box img,.sidebar-logo-icon img,.footer-logo-icon img{display:block;height:46px;width:auto}
