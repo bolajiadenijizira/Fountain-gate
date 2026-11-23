@@ -185,3 +185,8 @@ footer span{color:#a9b8d6}
 .faq-list summary::after{content:"+";color:var(--red);font-size:1.4rem;line-height:1}
 .faq-list details[open] summary::after{content:"\2212"}
 .faq-list details p{color:var(--muted);margin:0 0 1.1rem}
+
+/* gallery: 2 x 2 layout for four photos */
+.gallery-container{grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr));grid-auto-rows:300px}
+.gallery-item.large{grid-column:auto}
+.gallery-item img{object-position:center 30%}
